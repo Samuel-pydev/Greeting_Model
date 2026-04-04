@@ -1,10 +1,12 @@
 import joblib
+import random
+from dataset import responses
 
 # Load the model and vectorizer
 model = joblib.load("MD.pkl")
 vectorizer = joblib.load("VTR.pkl")
 
-print("\n","#~#~"*20, "Greeting Model - Type quit to Quit ", "#~#~"*20)
+print("\n","#~#~"*5, "Greeting Model - Type quit to Quit ", "#~#~"*5)
 
 while True:
     user_input = input("\n🧍‍♂️: ")
@@ -18,7 +20,6 @@ while True:
 
     prediction = model.predict(X)
 
-    if prediction[0] == 1:
-        print("\n🖥: Greetings")
-    else:
-        print("\n🖥: No - Greetings")
+    intent = str(prediction[0])
+    reply = random.choice(responses[intent])
+    print("\n🖥: ", reply, )

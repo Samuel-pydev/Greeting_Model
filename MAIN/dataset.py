@@ -1,7 +1,7 @@
 # Dataset of grettings and non grettings
 
 sentences = [
-    # 100 greetings (label = 1)
+    # 100 greetings 
     "Hello", "Hi", "Hey", "Good morning", "Good afternoon", "Good evening", "Howdy", "Greetings",
     "What’s up", "How are you", "How’s it going", "Nice to meet you", "Pleasure to meet you",
     "Long time no see", "Hey there", "Hiya", "Yo", "Sup", "Welcome", "Good to see you",
@@ -16,29 +16,101 @@ sentences = [
     "Hi dear", "Hey dear", "Hi all", "Hello all", "Hey all", "Good to have you here",
     "Nice to see you again", "Great seeing you", "Hi again", "Hello again", "Hey again",
     "Hey stranger", "Hi stranger", "Hello stranger", "Howdy partner", "Greetings everyone",
+    "Aloha", "Bonjour", "Ciao", "Namaste", "Shalom","Hey what's good", "What's popping", "How far",
+    "Wagwan", "Wsg", "Howfar", "Wazzup", "Yoo","Good to have you", "Glad you're here", "Look who it is",
+    "Well hello there", "Oh hey", "Hey hey", "Heyo", "Hi hi",
     
-    
 
-    # 100 non-greetings (label = 0)
-    "table", "mountain", "engine", "notebook", "galaxy", "pepper", "ocean", "ladder", "cloud",
-    "hammer", "forest", "keyboard", "diamond", "pillow", "river", "compass", "bicycle",
-    "curtain", "volcano", "mirror", "lantern", "suitcase", "candle", "desert", "camera",
-    "jacket", "satellite", "bottle", "painting", "thunder", "bridge", "feather", "wallet",
-    "island", "clock", "shovel", "rocket", "marble", "tunnel", "umbrella",
+     # farewells
+    "Bye","Goodbye","See you later","Take care","Farewell",
+    "See you soon","Catch you later","Later","Gotta go","I'm out",
+    "Peace out","Until next time","So long","See ya","Bye bye",
+    "Have a good one","Take it easy","I'll see you around","Laters","Adios",
+    "Cheerio","Toodles","Night","Good night","Sleep well",
+    "Safe travels","Have a good day","Talk later","Catch you on the flip side","I'm heading out",
+    "Be seeing you","Until we meet again","Have a great day","Have a great night","Enjoy your day",
+    "Enjoy your evening","Stay safe","Stay well","All the best","Best wishes",
+    "Keep in touch","Don’t be a stranger","Take care of yourself","Look after yourself","Drive safe",
+    "Travel safe","Have fun","Enjoy yourself","See you next time","See you tomorrow",
+    "See you tonight","Catch you soon","Later on","Bye for now","Signing off",
+    "I'm off","I'm heading off","Time to go","Off I go","Talk soon",
+    "Chat later","Until later","Till next time","Have a nice one","Have a pleasant day",
+    "Have a lovely day","Have a wonderful day","Have a blessed day","Stay awesome","Stay cool",
+    "Keep smiling","Be good","Be safe","Peace","Much love",
+    "Warm regards","Kind regards","Respect","Later gator","After a while, crocodile",
+    "Toodaloo","Bye for now, see you later","Take care now","Go well","Walk good",
+    "Stay out of trouble","Mind yourself","I’m signing out","That’s me done","I’m off for now",
+    "Catch you next time","See you on the other side","Have a chill day","Enjoy the rest of your day","Enjoy the rest of your night",
+    "I’ll catch up with you later","Let’s talk again soon","Until then","I’m logging off","I’m bouncing",
 
-    "phone", "tablet", "charger", "speaker", "microphone", "headphones", "monitor", "printer",
-    "router", "modem", "cable", "switch", "server", "database", "algorithm", "function",
-    "variable", "loop", "array", "string", "integer", "boolean", "object", "class", "method",
-    "compile", "execute", "debug", "deploy", "commit", "branch", "merge", "repository",
-    "framework", "library", "package", "module", "script", "terminal", "console",
-
-    "apple", "banana", "orange", "grape", "mango", "pineapple", "strawberry", "blueberry",
-    "watermelon", "kiwi", "peach", "pear", "plum", "cherry", "apricot", "coconut",
-    "car", "bus", "train", "airplane", "bicycle ride", "motorcycle", "truck",
-    "road", "highway", "traffic", "signal", "engine oil", "fuel tank", "brake",
-    "school", "teacher", "student", "classroom", "homework", "exam", "lesson",
-    "book", "pen", "pencil", "eraser", "desk", "chair", "board"
+    # 100 non-greetings 
+    "What time is it", "How much does it cost", "Where is the bathroom",
+    "I need help", "Can you fix this", "Send me the file",
+    "I am tired", "This is broken", "I don't understand",
+    "My code is not working", "How do I install Python",
+    "What is machine learning", "Can you explain this",
+    "I had pizza today", "It's raining outside",
+    "What's the weather like", "I need to sleep",
+    "My phone is dead", "The internet is slow",
+    "How do I reset my password", "I forgot my username",
+    "What does this error mean", "How do I fix this bug",
+    "The app keeps crashing", "My laptop won't turn on",
+    "I need to charge my phone", "Where can I buy this",
+    "How much is the transport fare", "I'm running late",
+    "Can you call me later", "I'll be there in 10 minutes",
+    "What did I miss", "I don't know what to do",
+    "This is taking too long", "I'm so confused",
+    "Can you send me the link", "What's the deadline",
+    "I need to submit this today", "My assignment is due tomorrow",
+    "How do I start learning ML", "What is a neural network",
+    "Explain gradient descent", "What is overfitting",
+    "How do I split a dataset", "What is a confusion matrix",
+    "I'm getting a 404 error", "The server is down",
+    "How do I push to GitHub", "What is a pull request",
+    "My pip install is failing", "How do I create a virtual environment",
+    "What is an API", "How do I make a POST request",
+    "I need to eat something", "I'm really hungry",
+    "What's for lunch", "I haven't slept in days",
+    "I'm feeling sick", "My head hurts",
+    "I need to go to the hospital", "What's the nearest pharmacy",
+    "How do I get to the bus stop", "Is there a shortcut",
+    "I'm lost", "Can you help me find this place",
+    "What's the price of this", "Is this on discount",
+    "I want to buy a new laptop", "Which one is better",
+    "Compare these two options", "What are the specs",
+    "I need a recommendation", "What would you suggest",
+    "This food is cold", "The power just went out",
+    "There's no light in my room", "My fan is making noise",
+    "I need to pay my bills", "How do I transfer money",
+    "What's my account balance", "I need to withdraw cash",
+    "The ATM is not working", "I forgot my PIN",
+    "I'm bored", "There's nothing to do",
+    "What should I watch", "Recommend a movie",
+    "I finished watching that series", "What's a good book to read",
+    "I want to learn guitar", "How do I get better at coding",
+    "I need to practice more", "This is harder than I thought",
+    "I give up", "I'll try again tomorrow",
+    "What's the point of this", "I don't see the use",
+    "Explain it differently", "Can you give me an example",
+    "Show me how it's done", "Walk me through it",
+    "I'm not getting it", "This makes no sense to me",
 ]
 
 # labels
-labels = [1]*100 + [0]*100
+labels = ["greeting"]*100 + ["farewell"]*100 + ["non-greetings"]*100
+
+responses = {
+    "greeting": [
+        "Hey!", "Yo what's good!", "Wagwan!", "Hey there!", 
+        "What's up!", "Heyyy!", "Sup!", "Hello hello!",
+    ],
+    "farewell": [
+        "Later!", "Peace out!", "Take care!", "See you around!",
+        "Bye bye!", "Until next time!", "Catch you later!",
+    ],
+    "other": [
+        "I only understand greetings and farewells for now.",
+        "That's beyond me right now.",
+        "Not sure what to do with that yet.",
+    ]
+}
