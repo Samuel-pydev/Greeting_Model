@@ -1,4 +1,5 @@
 import joblib
+import random
 
 # Load the pair
 model = joblib.load("model.pkl")
@@ -16,6 +17,8 @@ while True :
     X = vectorizer.transform([user_input])
     prediction = model.predict(X)
 
+
+    
     if prediction[0] == 1:
         print(" Model: Greetings Earthlings. \n ")
         print(prediction[0])

@@ -23,7 +23,7 @@ score = model.score(X_test, y_test)
 print("Accuracy: ", score*100,"%")
 
 # Saving model and vectorizer 
-jb.dump(model, "MD.pkl")
+jb.dump(model, "MDL.pkl")
 jb.dump(vectorizer, "VTR.pkl")
 
 print("Saved ✅")

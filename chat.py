@@ -3,7 +3,7 @@ import random
 from dataset import responses
 
 # Load the model and vectorizer
-model = joblib.load("MD.pkl")
+model = joblib.load("MDL.pkl")
 vectorizer = joblib.load("VTR.pkl")
 
 print("\n","#~#~"*5, "Greeting Model - Type quit to Quit ", "#~#~"*5)
